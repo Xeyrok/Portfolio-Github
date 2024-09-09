@@ -31,7 +31,6 @@ header h1:hover {
     text-shadow: 0 0 12px rgba(0, 170, 255, 0.9), 0 0 25px rgba(0, 170, 255, 0.7);
 }
 
-
 section {
     margin: 2rem auto;
     padding: 1rem;
@@ -41,19 +40,40 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
 
-ul {
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    display: inline-block;
+}
+
+nav a:hover, #report-download:hover {
+    text-decoration: underline;
+}
+
+#contact ul {
     display: flex;
     justify-content: center;
     padding: 0;
     list-style-type: none;
 }
 
-li {
+#contact {
+    text-align: center;
+}
+
+#contact li {
     margin: 0 20px;
 }
 
-li a {
+#contact li a {
     display: inline-block;
     padding: 10px 15px;
     border: 2px solid #333;
@@ -66,20 +86,19 @@ li a {
     transition: all 0.3s ease;
 }
 
-li a:hover {
+#contact li a:hover {
     border-color: #0073e6;
     text-decoration: underline;
 }
 
-li a::after {
-    content: ' ➔'; /* Petite flèche après le texte */
+#contact li a::after {
+    content: ' ➔';
     transition: margin-left 0.3s ease;
 }
 
-li a:hover::after {
+#contact li a:hover::after {
     margin-left: 5px;
 }
-
 
 #theme-toggle {
     position: absolute;
@@ -116,16 +135,47 @@ li a:hover::after {
     transform: scale(1.1);
 }
 
-#social {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+#report-download {
+    color : inherit;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    text-align: center;
+    border: 2px dashed;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-#social.visible {
-    opacity: 1;
+
+.project {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
+.project h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    padding: 10px;
+}
 
+.project img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+}
+
+.project img:hover {
+    box-shadow: 0 4px 12px violet;
+    transform: scale(1.05);
+}
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -150,6 +200,11 @@ li a:hover::after {
     #cv-icon {
         width: 60px;
         height: 60px;
+    }
+
+    .project img {
+        width: 300px;
+        height: 225px;
     }
 }
 
@@ -176,5 +231,10 @@ li a:hover::after {
     #cv-icon {
         width: 40px;
         height: 40px;
+    }
+
+    .project img {
+        width: 250px;
+        height: 188px;
     }
 }

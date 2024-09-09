@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création d'une bataille navale en Java - Bastien MARCHERON</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Création d'une bataille navale en Java</h1>
+        <nav>
+            <a href="../index.html">ACCUEIL</a>
+        </nav>
+        <div id="theme-toggle">
+            <img src="../logo/moon.png" alt="Changer le thème" id="theme-icon">
+        </div>
+    </header>
+
+    <section id="project-details">
+        <h2>Description du Projet</h2>
+        <p>
+            Développer un jeu de bataille navale en Java où deux joueurs, l'un humain et l'autre contrôlé par un algorithme, s'affrontent sur une grille. Le but est de couler tous les navires de l'adversaire en choisissant des cases pour tirer.
+            Ce projet s'est effectué en groupe de 4. Pour ma part, je me suis occupé de la partie gestion
+            des joueurs ainsi que de la partie CORE.
+        </p>
+
+        <h2>Fonctionnalités</h2>
+        <ul>
+            <li>Gestion des positions des navires</li>
+            <li>Logique de jeu pour les tirs et les résultats</li>
+            <li>Interface utilisateur graphique (GUI) et en ligne de commande (CLI)</li>
+            <li>Mode de jeu contre un adversaire aléatoire</li>
+        </ul>
+
+        <h2>Technologies Utilisées</h2>
+        <ul>
+            <li>Langage : Java</li>
+            <li>Bibliothèques : Java Swing (interface graphique), Java AWT (composants d'affichage)</li>
+            <li>Architecture : Modèle-Vue-Contrôleur (MVC)</li>
+        </ul>
+
+        <h2>Architecture du Code</h2>
+        <ul>
+            <li><strong>CORE :</strong> Classes de base pour la logique du jeu (navires, grille, cellules)</li>
+            <li><strong>PLAYERS :</strong> Types de joueurs (HUMAN, RANDOMPLAYER)</li>
+            <li><strong>INTERFACES :</strong> Versions CLI et GUI, gestion des entrées et sorties du jeu</li>
+        </ul>
+
+        <h2>Interfaces</h2>
+        <p>
+            <strong>GUI :</strong> Mode par défaut avec options -g ou –gui pour lancer depuis le terminal.<br>
+            <strong>CLI :</strong> Mode accessible avec options -c ou –cli, utilisant une représentation textuelle.
+        </p>
+
+        <h2>Gestion des Joueurs</h2>
+        <ul>
+            <li><strong>Human :</strong> Interaction via l'interface</li>
+            <li><strong>RandomPlayer :</strong> Joueur qui choisit des coups de manière aléatoire avec optimisation</li>
+        </ul>
+
+        <h2>Tests</h2>
+        <p>
+            Développement de tests pour vérifier les fonctionnalités des classes (navires, cellules, grille).
+        </p>
+
+        <h2>Conclusion</h2>
+        <p>
+            Projet ayant approfondi les compétences en Java et la maîtrise du modèle MVC. Renforcement des compétences en conception d'applications et gestion de projets logiciels.
+        </p>
+    
+        <a href="../pdf/rapport_bataille_navale.pdf" download="rapport-projet.pdf" id="report-download" target="_blank">
+            Télécharger le rapport du projet
+        </a>
+        
+        
+
+    </section>    
+</body>
+</html>

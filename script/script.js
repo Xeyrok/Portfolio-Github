@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     const toggleButton = document.getElementById('theme-toggle');
     const themeIcon = document.getElementById('theme-icon');
+    
     let darkMode = localStorage.getItem('darkMode') === 'true';
+    const isIndexPage = window.location.pathname.includes('index.html');
+    const basePath = isIndexPage ? 'logo/' : '../logo/';
 
     function updateTheme() {
         if (darkMode) {
@@ -11,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 section.style.backgroundColor = '#444';
                 section.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.7)';
             });
-            themeIcon.src = 'logo/sun.png';
+            themeIcon.src = `${basePath}sun.png`;
         } else {
             document.body.style.backgroundColor = '#fff';
             document.body.style.color = '#000';
@@ -19,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 section.style.backgroundColor = '#fff';
                 section.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
             });
-            themeIcon.src = 'logo/moon.png'; 
+            themeIcon.src = `${basePath}moon.png`;
         }
         localStorage.setItem('darkMode', darkMode);
     }
@@ -32,25 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 10);
     }
 
-    toggleButton.addEventListener('click', function() {
-        darkMode = !darkMode;
-        applyTheme();
-    });
-
-    applyTheme();
-});
-
-
-function revealOnScroll() {
-    const section = document.getElementById('social');
-    const sectionPosition = section.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight;
-
-    if (sectionPosition < screenPosition) {
-        setTimeout(() => {
-            section.classList.add('visible');
-        }, 500);
+    if (toggleButton) {
+        toggleButton.addEventListener('click', function() {
+            darkMode = !darkMode;
+            applyTheme();
+        });
     }
-}
 
-window.addEventListener('scroll', revealOnScroll);
+    applyTheme(); // Applique le thème lors du chargement de la page
+});

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de la Vie -  Bastien MARCHERON</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Jeu de la Vie</h1>
+        <nav>
+            <a href="../index.html">Accueil</a>
+        </nav>
+        <div id="theme-toggle">
+            <img src="../logo/moon.png" alt="Changer le thème" id="theme-icon">
+        </div>
+    </header>
+
+    <section id="project-details">
+        <h2>Description du Projet</h2>
+        <p>
+            Le "Jeu de la Vie" vise à simuler l'évolution de cellules sur une grille en fonction de règles préétablies, explorant ainsi les concepts d'automates cellulaires. 
+            Réalisé par un groupe de quatre étudiants, ce projet met en œuvre des techniques avancées en Java pour offrir une expérience interactive et configurable.
+            Je me suis personnellement uniquement occupé de la partie test pour ce projet.
+        </p>
+
+        <h2>Fonctionnalités Principales</h2>
+        <ul>
+            <li>Simulation d'automates cellulaires avec des règles configurables</li>
+            <li>Interface graphique intuitive pour la visualisation et l'interaction avec la grille</li>
+            <li>Sauvegarde et chargement de configurations de grille personnalisées</li>
+            <li>Optimisation des calculs via l'algorithme HashLife</li>
+        </ul>
+
+        <h2>Architecture du Code</h2>
+        <ul>
+            <li><strong>Noyau :</strong> Contient les règles de vie et la logique de simulation des cellules</li>
+            <li><strong>Interface Utilisateur :</strong> Développée en Java, elle permet de démarrer, stopper et manipuler la simulation</li>
+            <li><strong>Gestion des Fichiers :</strong> Sauvegarde et lecture de configurations de jeu sous forme de fichiers .gol</li>
+            <li><strong>Optimisations :</strong> Utilisation de Threads et de l'algorithme HashLife pour des simulations plus performantes</li>
+        </ul>
+
+        <h2>Interface Graphique (GUI)</h2>
+        <p>
+            L'interface graphique, développée en Java, permet de contrôler la simulation en temps réel. Elle offre la possibilité de démarrer ou arrêter le jeu, 
+            de modifier les règles dynamiquement et de zoomer sur différentes parties de la grille pour une meilleure visualisation.
+        </p>
+
+        <h2>Conclusion</h2>
+        <p>
+            Ce projet a permis d'explorer des techniques avancées de programmation orientée objet et de développer une meilleure compréhension des algorithmes 
+            optimisés pour des simulations complexes. Il a aussi offert une occasion précieuse de travailler en équipe sur une application pratique et stimulante.
+        </p>
+
+        <a href="../pdf/rapport_jeux_de_la_vie.pdf" download="rapport-jeu-de-la-vie.pdf" id="report-download" target="_blank">
+            Télécharger le rapport du projet
+        </a>
+    </section>
+</body>
+</html>
