@@ -9,17 +9,17 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateTheme() {
         if (darkMode) {
             document.body.style.backgroundColor = '#333';
-            document.body.style.color = '#fff';
+            document.body.style.color = 'white';
             document.querySelectorAll('section').forEach(section => {
                 section.style.backgroundColor = '#444';
                 section.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.7)';
             });
             themeIcon.src = `${basePath}sun.png`;
         } else {
-            document.body.style.backgroundColor = '#fff';
+            document.body.style.backgroundColor = 'white';
             document.body.style.color = '#000';
             document.querySelectorAll('section').forEach(section => {
-                section.style.backgroundColor = '#fff';
+                section.style.backgroundColor = 'white';
                 section.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
             });
             themeIcon.src = `${basePath}moon.png`;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Création d'une bataille navale en Java - Bastien MARCHERON</title>
+    <title>Création d'une bataille navale en Java</title>
     <link rel="stylesheet" href="../style/style.css">
     <script src="../script/script.js" defer></script>
 </head>
@@ -22,8 +22,12 @@
         <h2>Description du Projet</h2>
         <p>
             Développer un jeu de bataille navale en Java où deux joueurs, l'un humain et l'autre contrôlé par un algorithme, s'affrontent sur une grille. Le but est de couler tous les navires de l'adversaire en choisissant des cases pour tirer.
-            Ce projet s'est effectué en groupe de 4. Pour ma part, je me suis occupé de la partie gestion
-            des joueurs ainsi que de la partie CORE.
+            Ce projet s'est effectué en groupe de 4. 
+        </p>
+        <p>
+            Pour ma part, je me suis occupé de la partie gestion
+            des joueurs ainsi que de la partie CORE qui gère toute
+            la logique du jeu.
         </p>
 
         <h2>Fonctionnalités</h2>
@@ -43,15 +47,15 @@
 
         <h2>Architecture du Code</h2>
         <ul>
-            <li><strong>CORE :</strong> Classes de base pour la logique du jeu (navires, grille, cellules)</li>
+            <li><strong><em>CORE :</em></strong> Classes de base pour la logique du jeu (navires, grille, cellules)</li>
             <li><strong>PLAYERS :</strong> Types de joueurs (HUMAN, RANDOMPLAYER)</li>
             <li><strong>INTERFACES :</strong> Versions CLI et GUI, gestion des entrées et sorties du jeu</li>
         </ul>
 
         <h2>Interfaces</h2>
         <p>
-            <strong>GUI :</strong> Mode par défaut avec options -g ou –gui pour lancer depuis le terminal.<br>
-            <strong>CLI :</strong> Mode accessible avec options -c ou –cli, utilisant une représentation textuelle.
+            <strong>GUI :</strong> Mode par défaut pour lancer depuis le terminal.<br>
+            <strong>CLI :</strong> Mode accessible utilisant une représentation textuelle.
         </p>
 
         <h2>Gestion des Joueurs</h2>
@@ -59,11 +63,6 @@
             <li><strong>Human :</strong> Interaction via l'interface</li>
             <li><strong>RandomPlayer :</strong> Joueur qui choisit des coups de manière aléatoire avec optimisation</li>
         </ul>
-
-        <h2>Tests</h2>
-        <p>
-            Développement de tests pour vérifier les fonctionnalités des classes (navires, cellules, grille).
-        </p>
 
         <h2>Conclusion</h2>
         <p>

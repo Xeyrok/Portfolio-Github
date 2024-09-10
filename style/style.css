@@ -28,14 +28,14 @@ header h1 {
 
 header h1:hover {
     transform: scale(1.05);
-    text-shadow: 0 0 12px rgba(0, 170, 255, 0.9), 0 0 25px rgba(0, 170, 255, 0.7);
+    text-shadow: 0 0 12px lightblue, 0 0 25px lightblue;
 }
 
 section {
     margin: 2rem auto;
     padding: 1rem;
     max-width: 800px;
-    background-color: #fff;
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -47,7 +47,7 @@ h2 {
 }
 
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem;
@@ -87,7 +87,7 @@ nav a:hover, #report-download:hover {
 }
 
 #contact li a:hover {
-    border-color: #0073e6;
+    border-color: blue;
     text-decoration: underline;
 }
 
@@ -135,6 +135,7 @@ nav a:hover, #report-download:hover {
     transform: scale(1.1);
 }
 
+
 #report-download {
     color : inherit;
     text-decoration: none;
@@ -173,7 +174,7 @@ nav a:hover, #report-download:hover {
 }
 
 .project img:hover {
-    box-shadow: 0 4px 12px violet;
+    box-shadow: 0 4px 12px blue;
     transform: scale(1.05);
 }
 
