@@ -1,10 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
     const toggleButton = document.getElementById('theme-toggle');
     const themeIcon = document.getElementById('theme-icon');
-    
+
     let darkMode = localStorage.getItem('darkMode') === 'true';
     const isIndexPage = window.location.pathname.includes('index.html');
     const basePath = isIndexPage ? 'logo/' : '../logo/';
+
+    const sunIcon = new Image();
+    const moonIcon = new Image();
+    sunIcon.src = `${basePath}sun.png`;
+    moonIcon.src = `${basePath}moon.png`;
 
     function updateTheme() {
         if (darkMode) {
@@ -14,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 section.style.backgroundColor = '#444';
                 section.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.7)';
             });
-            themeIcon.src = `${basePath}sun.png`;
+            themeIcon.src = sunIcon.src;
         } else {
             document.body.style.backgroundColor = 'white';
             document.body.style.color = '#000';
@@ -22,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 section.style.backgroundColor = 'white';
                 section.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
             });
-            themeIcon.src = `${basePath}moon.png`;
+            themeIcon.src = moonIcon.src;
         }
         localStorage.setItem('darkMode', darkMode);
     }
@@ -42,5 +47,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    applyTheme(); // Applique le thème lors du chargement de la page
+    applyTheme();
 });
