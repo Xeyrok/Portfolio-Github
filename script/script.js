@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const themeIcon = document.getElementById('theme-icon');
 
     let darkMode = localStorage.getItem('darkMode') === 'true';
-    const basePath = '/Portfolio-Github/logo/';
+
+    const basePath = 'logo/';
 
     const sunIcon = new Image();
     const moonIcon = new Image();
