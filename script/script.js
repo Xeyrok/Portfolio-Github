@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const themeIcon = document.getElementById('theme-icon');
 
     let darkMode = localStorage.getItem('darkMode') === 'true';
-    const isIndexPage = window.location.pathname.includes('index.html');
-    const basePath = isIndexPage ? 'logo/' : '../logo/';
+
+    const basePath = 'logo/';
 
     const sunIcon = new Image();
     const moonIcon = new Image();
