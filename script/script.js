@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let darkMode = localStorage.getItem('darkMode') === 'true';
 
-    const basePath = 'logo/';
+    const basePath = '/Portfolio-Github/logo/';
 
     const sunIcon = new Image();
     const moonIcon = new Image();
